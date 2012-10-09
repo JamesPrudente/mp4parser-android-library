@@ -1,0 +1,8 @@
+bin
+gen
+obj
+.DS_Store
+scripts/categories
+experiments/images
+composite.jpg
+server/images
