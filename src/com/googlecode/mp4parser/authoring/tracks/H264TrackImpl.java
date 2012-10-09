@@ -349,6 +349,7 @@ public class H264TrackImpl extends AbstractTrack {
             case 3:
             case 4:
             case 5:
+                seiMessage = new SEIMessage(cleanBuffer(data), seqParameterSet);
                 action = NALActions.STORE; // Will only work in single slice per frame mode!
                 break;
 
@@ -700,7 +701,7 @@ public class H264TrackImpl extends AbstractTrack {
                 } else {
                     read = datasize;
                 }
-                LOG.fine(this.toString());
+//                LOG.fine(this.toString());
             }
         }
 

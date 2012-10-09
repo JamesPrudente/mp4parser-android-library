@@ -56,7 +56,7 @@ public class PropertyBoxParserImpl extends AbstractBoxParser {
                     mapping.load(new BufferedInputStream(getClass().getResourceAsStream(customProperty)));
                 }
             } catch (IOException e) {
-                throw new RuntimeException(e);
+//                throw new RuntimeException(e);
             }
         } finally {
             try {
